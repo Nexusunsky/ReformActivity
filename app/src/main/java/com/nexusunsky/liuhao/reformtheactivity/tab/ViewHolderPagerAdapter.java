@@ -353,7 +353,8 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
     public static abstract class DataRecyclerAdapter
             extends ActivityRecycler.BaseRecyclerAdapter<ItemModel> {
 
-        private LayoutInflater mLayoutInflater;
+        protected LayoutInflater mLayoutInflater;
+        protected int mResLayoutID;
 
         /**
          * RecylerView中显示内容的Item
@@ -364,18 +365,29 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
             }
         }
 
-        public DataRecyclerAdapter(Context context) {
+        public DataRecyclerAdapter(Context context, int resLayoutID) {
             mLayoutInflater = LayoutInflater.from(context);
             mContext = context;
+            mResLayoutID = resLayoutID;
         }
 
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return getViewHolder(parent, viewType);
+
+            View inflate = mLayoutInflater.inflate(mResLayoutID, parent, );
+
+            return getViewHolder(inflate, viewType);
         }
 
         @NonNull
-        protected abstract RecyclerView.ViewHolder getViewHolder(ViewGroup parent, int viewType);
+        protected RecyclerView.ViewHolder getViewHolder(
+                View inflate,
+                int viewType,
+                boolean attachToRoot) {
+
+            
+            return null;
+        }
 
         @Override
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
@@ -390,6 +402,9 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
 
     }
 
+    /**
+     * 处理业务逻辑和界面的Handler
+     */
     private class PreviewHandler extends Handler {
 
         private WeakReference<MainActivity> ref;

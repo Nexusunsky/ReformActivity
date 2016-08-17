@@ -7,13 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 
-import com.nexusunsky.liuhao.reformtheactivity.tab.ViewHolderPagerAdapter;
+import com.nexusunsky.liuhao.reformtheactivity.activities.item.ActivitiesPrizeItemAdapter;
 import com.nexusunsky.liuhao.reformtheactivity.tab.TabIndicator;
+import com.nexusunsky.liuhao.reformtheactivity.tab.ViewHolderPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    ViewHolderPagerAdapter.DataRecyclerAdapter mDataRecyclerAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +48,10 @@ public class MainActivity extends AppCompatActivity {
         datas.add("tab5");
         datas.add("tab6");
 
+        mDataRecyclerAdapter = new ActivitiesPrizeItemAdapter(this);
 
         final ViewHolderPagerAdapter pagerAdapter =
-                new ViewHolderPagerAdapter(datas, MainActivity.this);
+                new ViewHolderPagerAdapter(datas, MainActivity.this, mDataRecyclerAdapter);
 
         viewPager.setAdapter(pagerAdapter);
 

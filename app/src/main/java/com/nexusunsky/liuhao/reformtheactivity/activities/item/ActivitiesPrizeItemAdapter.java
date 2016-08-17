@@ -4,7 +4,6 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,13 +20,13 @@ import com.nexusunsky.liuhao.reformtheactivity.tab.ViewHolderPagerAdapter;
  */
 public class ActivitiesPrizeItemAdapter extends ViewHolderPagerAdapter.DataRecyclerAdapter {
 
-    public ActivitiesPrizeItemAdapter(Context context) {
-        super(context);
+    public ActivitiesPrizeItemAdapter(Context context, int resLayoutID) {
+        super(context, resLayoutID);
     }
 
     @NonNull
     @Override
-    protected RecyclerView.ViewHolder getViewHolder(ViewGroup parent, int viewType) {
+    protected RecyclerView.ViewHolder getViewHolder(View inflate, int viewType) {
 
         return null;
     }
@@ -38,9 +37,12 @@ public class ActivitiesPrizeItemAdapter extends ViewHolderPagerAdapter.DataRecyc
     }
 
     final class ViewHolderTab extends BaseRecylerItemHolder {
-        TextView tv;
-        View reminder;
-        ImageView img;
+
+        ImageView prize_Icon;
+        TextView prize_Title;
+        TextView prize_SubTitle;
+        TextView prize_TimeTip;
+        TextView getPrize_Btn;
 
         public ViewHolderTab(View itemView) {
             super(itemView);
