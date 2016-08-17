@@ -377,6 +377,11 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
             return getViewHolder(inflate, viewType);
         }
 
+        /**
+         * @param inflate  初始化出来的根布局
+         * @param viewType 根据{@link RecyclerView#getItemViewType(int)}中的Item类型返回相应的Item
+         * @see RecyclerView#getItemViewType(int)
+         */
         @NonNull
         protected abstract RecyclerView.ViewHolder getViewHolder(View inflate, int viewType);
 
@@ -387,10 +392,15 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
             initDataOfHolder(item, baseRecylerItemHolder);
         }
 
+        /**
+         * 实现数据适配给Viewholder
+         *
+         * @param item                  获取到的每个Model数据模型
+         * @param baseRecylerItemHolder 用于显示数据的ViewHolder
+         */
         protected abstract void initDataOfHolder(
                 ItemModel item,
                 BaseRecylerItemHolder baseRecylerItemHolder);
-
     }
 
     /**
@@ -457,7 +467,8 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
                         mHolderContent.mRecyclerView.refreshComplete();
                         notifyDataChanged();
                     } else {
-                        ActivityRecycler.RecyclerFooterContror.setFooterViewState(activity,
+                        ActivityRecycler.RecyclerFooterContror.setFooterViewState(
+                                activity,
                                 mHolderContent.mRecyclerView, REQUEST_COUNT,
                                 ActivityRecycler.RecyclerLoadingFooter.State.NetWorkError,
                                 mFooterClick);
