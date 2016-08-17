@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white" type="color">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+
+    <!-- ydx -->
+
+    <!-- new -->
+    <color name="main_red">#fd5224</color>
+
+    <!-- RQDecode -->
+    <!-- Android standard ICS color -->
+    <!-- Android standard ICS color -->
+    <!-- Android standard ICS color -->
+
+    <!-- index -->
+
+    <!-- welcome -->
+
+
+    <!-- hexinchun -->
+
+    <!-- bbw -->
+
+    <!-- wealth -->
+
+    <!-- 健康行活动 -->
+    <color name="hw_lucky_draw_text_other_day">#666666</color>
+
+
+    <!-- 社交云 -->
+    <!-- 聊天界面底部隐藏功能区背景颜色 -->
+
+    <!-- 分割线颜色 -->
+    <!-- 底部导航条文字颜色 -->
+
+    <!-- 消息列表界面文本颜色 -->
+    <!-- 聊天长按弹出框的单个菜单的背景 -->
+    <!-- 公共字体 黑色 -->
+    <!-- 未读消息快速定位文字颜色 -->
+    <!-- 80%黑 -->
+    <!-- 所有底部弹出框 -->
+    <!-- 朋友圈虚线 -->
+    <!-- 朋友圈背景颜色 -->
+    <!-- 朋友圈时间字体颜色 -->
+    <!-- 朋友圈时间字体颜色 -->
+    <!-- 朋友圈时间字体颜色 -->
+    <!-- 朋友圈内容字体颜色 -->
+    <!-- 朋友圈提醒谁字体颜色 -->
+    <!-- 朋友圈位置字体颜色 -->
+    <!-- 朋友圈昵称字体颜色 -->
+    <!-- 朋友圈评论字体颜色 -->
+    <!-- 朋友圈评论面板颜色 -->
+    <!-- 朋友圈图片选择背景颜色 -->
+    <!-- 朋友圈评论面板颜色 -->
+    <!-- 半透明黑色图片 -->
+    <!-- 公共字体纯白色 -->
+    <color name="common_white">@android:color/white</color>
+    <!-- 聊天界面item相关颜色 -->
+    <!-- 聊天界面温馨提示相关颜色 -->
+
+    <!-- PullToRefreshView -->
+
+    <!-- slate -->
+
+    <!--抽奖-->
+
+    <!--基金-->
+
+
+    <!--生活助手 -->
+
+    <color name="gray">#888888</color>
+
+
+    <!--LH_RECYLERVIEW-->
+    <color name="color_00">#8A000000</color>
+
+</resources>
