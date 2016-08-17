@@ -376,7 +376,7 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
 
             View inflate = mLayoutInflater.inflate(mResLayoutID, parent, );
 
-            return getViewHolder(inflate, viewType);
+            return getViewHolder(inflate, viewType,);
         }
 
         @NonNull
@@ -385,7 +385,7 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
                 int viewType,
                 boolean attachToRoot) {
 
-            
+
             return null;
         }
 
