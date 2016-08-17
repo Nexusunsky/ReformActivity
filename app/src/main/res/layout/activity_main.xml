@@ -22,6 +22,7 @@
             style="@style/MyCustomTabLayout"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:overScrollMode="never"
             app:tabMode="scrollable">
         </android.support.design.widget.TabLayout>
 
