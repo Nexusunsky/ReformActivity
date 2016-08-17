@@ -357,7 +357,7 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
         protected int mResLayoutID;
 
         /**
-         * RecylerView中显示内容的Item
+         * RecylerView中显示内容的ItemHolder
          */
         public static class BaseRecylerItemHolder extends RecyclerView.ViewHolder {
             public BaseRecylerItemHolder(View itemView) {
@@ -373,21 +373,12 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
 
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
-            View inflate = mLayoutInflater.inflate(mResLayoutID, parent, );
-
-            return getViewHolder(inflate, viewType,);
+            View inflate = mLayoutInflater.inflate(mResLayoutID, parent, false);
+            return getViewHolder(inflate, viewType);
         }
 
         @NonNull
-        protected RecyclerView.ViewHolder getViewHolder(
-                View inflate,
-                int viewType,
-                boolean attachToRoot) {
-
-
-            return null;
-        }
+        protected abstract RecyclerView.ViewHolder getViewHolder(View inflate, int viewType);
 
         @Override
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {

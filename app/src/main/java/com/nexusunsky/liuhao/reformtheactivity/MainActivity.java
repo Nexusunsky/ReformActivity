@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         datas.add("tab5");
         datas.add("tab6");
 
-        mDataRecyclerAdapter = new ActivitiesPrizeItemAdapter(this);
+        mDataRecyclerAdapter = new ActivitiesPrizeItemAdapter(this, R.layout.ar_prize_invaliditem);
 
         final ViewHolderPagerAdapter pagerAdapter =
                 new ViewHolderPagerAdapter(datas, MainActivity.this, mDataRecyclerAdapter);

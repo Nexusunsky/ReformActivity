@@ -7,16 +7,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nexusunsky.liuhao.reformtheactivity.R;
 import com.nexusunsky.liuhao.reformtheactivity.model.ItemModel;
 import com.nexusunsky.liuhao.reformtheactivity.tab.ViewHolderPagerAdapter;
 
 /**
- * @author Administrator
+ * @author LiuHao
  * @time 16/8/16 上午10:50
  * @des ${TODO}
- * @updateAuthor $Author$
- * @updateDate $Date$
- * @updateDes ${TODO}
  */
 public class ActivitiesPrizeItemAdapter extends ViewHolderPagerAdapter.DataRecyclerAdapter {
 
@@ -27,8 +25,9 @@ public class ActivitiesPrizeItemAdapter extends ViewHolderPagerAdapter.DataRecyc
     @NonNull
     @Override
     protected RecyclerView.ViewHolder getViewHolder(View inflate, int viewType) {
-
-        return null;
+        ActivitiesListItemHolder holderTab
+                = new ActivitiesListItemHolder(inflate);
+        return holderTab;
     }
 
     @Override
@@ -36,7 +35,7 @@ public class ActivitiesPrizeItemAdapter extends ViewHolderPagerAdapter.DataRecyc
 
     }
 
-    final class ViewHolderTab extends BaseRecylerItemHolder {
+    final class ActivitiesListItemHolder extends BaseRecylerItemHolder {
 
         ImageView prize_Icon;
         TextView prize_Title;
@@ -44,8 +43,13 @@ public class ActivitiesPrizeItemAdapter extends ViewHolderPagerAdapter.DataRecyc
         TextView prize_TimeTip;
         TextView getPrize_Btn;
 
-        public ViewHolderTab(View itemView) {
+        public ActivitiesListItemHolder(View itemView) {
             super(itemView);
+            prize_Icon = (ImageView) itemView.findViewById(R.id.ar_prize_icon);
+            prize_Title = (TextView) itemView.findViewById(R.id.ar_prize_title);
+            prize_SubTitle = (TextView) itemView.findViewById(R.id.ar_prize_subtitle);
+            prize_TimeTip = (TextView) itemView.findViewById(R.id.ar_prize_timetip);
+            getPrize_Btn = (TextView) itemView.findViewById(R.id.ar_prize_btn);
         }
     }
 
