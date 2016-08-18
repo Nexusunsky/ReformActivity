@@ -379,8 +379,8 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
 
         /**
          * @param inflate  初始化出来的根布局
-         * @param viewType 根据{@link RecyclerView#getItemViewType(int)}中的Item类型返回相应的Item
-         * @see RecyclerView#getItemViewType(int)
+         * @param viewType 根据{@link RecyclerView# getItemViewType(int)}中的Item类型返回相应的Item
+         * @see RecyclerView# getItemViewType(int)
          */
         @NonNull
         protected abstract RecyclerView.ViewHolder getViewHolder(View inflate, int viewType);

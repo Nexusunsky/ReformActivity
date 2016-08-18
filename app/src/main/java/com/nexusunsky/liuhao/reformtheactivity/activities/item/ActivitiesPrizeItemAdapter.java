@@ -25,8 +25,8 @@ public class ActivitiesPrizeItemAdapter extends ViewHolderPagerAdapter.DataRecyc
     @NonNull
     @Override
     protected RecyclerView.ViewHolder getViewHolder(View inflate, int viewType) {
-        ActivitiesListItemHolder holderTab
-                = new ActivitiesListItemHolder(inflate);
+        ActivitiesListItemHolder holderTab = new ActivitiesListItemHolder(inflate);
+
         return holderTab;
     }
 
@@ -34,6 +34,7 @@ public class ActivitiesPrizeItemAdapter extends ViewHolderPagerAdapter.DataRecyc
     protected void initDataOfHolder(ItemModel item, BaseRecylerItemHolder baseRecylerItemHolder) {
 
     }
+
 
     final class ActivitiesListItemHolder extends BaseRecylerItemHolder {
 
