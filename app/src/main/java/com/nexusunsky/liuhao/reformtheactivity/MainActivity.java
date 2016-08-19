@@ -56,8 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
-
         initTabViewIndicator(viewPager, pagerAdapter, tabLayout);
+        customTabViewPager(viewPager, pagerAdapter, tabLayout);
+
     }
 
     private void initTabViewIndicator(ViewPager viewPager,
@@ -67,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setTabsFromPagerAdapter(viewPager.getAdapter());
         spIndicView.setupWithTabLayout(tabLayout);
         spIndicView.setupWithViewPager(viewPager);
-        customTabViewPager(viewPager, pagerAdapter, tabLayout);
     }
 
     private void customTabViewPager(
