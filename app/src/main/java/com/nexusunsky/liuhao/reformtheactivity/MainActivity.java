@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
         List<String> datas = new ArrayList<>();
         datas.add("tab1");
         datas.add("tab2");
-        datas.add("tab3");
+       /* datas.add("tab3");
         datas.add("tab4");
         datas.add("tab5");
-        datas.add("tab6");
+        datas.add("tab6");*/
 
         mDataRecyclerAdapter = new ActivitiesPrizeItemAdapter(this, R.layout.ar_prize_invaliditem);
 

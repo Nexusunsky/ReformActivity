@@ -272,7 +272,7 @@ public class ViewHolderPagerAdapter extends PagerAdapter {
 
     ViewHolderTab mVHTab;
     View mTabItem;
-    private String tabTitles[] = new String[]{"热门", "深圳", "专属", "抽奖", "健康", "专属"};
+    private String tabTitles[] = new String[]{"热门", "深圳"/*, "专属", "抽奖", "健康", "专属"*/};
 
     public View getTabView(int position) {
 
